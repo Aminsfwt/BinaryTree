@@ -123,7 +123,7 @@ class BinarySearchTree:
 
 
 
-#build the binary tree
+#Helping Function tobuild the binary tree
 def build_tree(elements):
     root = BinarySearchTree(elements[0])
 
@@ -131,44 +131,3 @@ def build_tree(elements):
         root.add_child(elements[i])
 
     return root
-
-nums = [17,4,1,15,20,12,55,3,2,56,55,55,32,54,78,0,0,1,2,3,4,6,8,9,7,22,12,3,1,2,5]
-
-num_tree = build_tree(nums)
-
-print("Input numbers = ", nums)
-print("In Order      = ", num_tree.InOrderTraversal())
-print("Post Order    = ", num_tree.PostOrderTraversal())
-print("Pre Order     = ", num_tree.PreOrderTraversal())
-
-print('*'*50)
-print("Input numbers = ", nums)
-"""num_tree.delete(78)
-num_tree.delete(0)
-num_tree.delete(2)"""
-num_tree.delete(100)
-
-print("In Order after delete      = ", num_tree.InOrderTraversal())
-
-print('*'*50)
-print("Max Number     = ", num_tree.find_max())
-print("Min Number     = ", num_tree.find_min())
-print('*'*50)
-print("Sum of Number     = ", num_tree.calculate_sum())
-
-
-"""countries = ['Egypt', 'Syria', 'Palasteen', 'Sudan', 'Iraq']
-
-
-cnts_tree = build_tree(countries)
-
-print(cnts_tree.InOrderTraversal())
-
-print(cnts_tree.search('egypt'))
-print(cnts_tree.search('Egypt'))
-print(cnts_tree.search('Saudia'))"""
-
-    
-
-
-    
